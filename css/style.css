@@ -12,7 +12,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
 	font-family: Lato, 'Noto Sans JP',"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -44,7 +44,7 @@ q:before, q:after {
 	content: none;
 }
 
-input, textarea,{
+input, textarea {
 	padding: 0;
 	margin: 0;
 }
@@ -56,7 +56,7 @@ ol, ul{
 
 table{
 	width:100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     border-spacing:0;
 	box-sizing:border-box;
 }
@@ -348,8 +348,8 @@ ul {
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
 	-ms-transition: 0.2s ease-in-out;
-	-o-transition: 0.2s ease-in-out;						
-	transition: 0.2s ease-in-out;	
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 .fade:hover {
@@ -362,7 +362,7 @@ ul {
 .scale {
 	overflow: hidden;
 }
- 
+
 .scale img {
 	-webkit-transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
@@ -442,7 +442,7 @@ ul {
 	display:-ms-flexbox;
 	display:flex;
 	-ms-flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -514,7 +514,7 @@ header#header {
 .main-visual-img {
     max-width: 750px;
     padding-top: 40px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .comment01 {
@@ -558,7 +558,7 @@ header#header {
     max-width: 750px;
     padding-top: 0;
     margin: 0 auto;
-    
+
 }
 
 .comment01 {
@@ -589,7 +589,7 @@ header#header {
 
 /*main*/
 #main {
-    background: url("../images/main-bg.png") no-repeat center bottom #f5e803;    
+    background: url("../images/main-bg.png") no-repeat center bottom #f5e803;
     background-size: cover;
     position: relative;
     margin-top: -15px;
@@ -970,7 +970,7 @@ header#header {
     text-decoration: none;
 }
 
-.contact-bt a:before {
+.contact-bt a:before, .contact-bt input[type="button"]:before {
     animation: shine 2s ease-in-out infinite;
     background-color: #fff;
     content: " ";
@@ -982,7 +982,20 @@ header#header {
     transform: rotate(45deg);
     width: 30px;
 }
- 
+
+.contact-bt input[type="button"] {
+    border: none;
+    line-height: 81px;
+    padding: 0 120px;
+    font-size: 2em;
+    color: #fff;
+    background:url("../images/arrow-icon.png") no-repeat #ed6b9e;
+    background-size: 17px 26px;
+    background-position: top 48% right 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @keyframes shine {
   0% {
     transform: scale(0) rotate(45deg);
