@@ -646,12 +646,20 @@ header#header {
 
 .yoshino-txt {
     margin-top: -40px;
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 #index01 .yoshino-txt {
     width: 100%;
 }
+}
+
+@media (max-width: 768px){
+.yoshino-txt {
+    margin-top: -40px;
+    font-size: 1.2em;
+}
+
 }
 
 #index02 {
@@ -968,6 +976,7 @@ header#header {
     background-size: 17px 26px;
     background-position: top 48% right 25px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .contact-bt a:before, .contact-bt input[type="button"]:before {
@@ -1023,6 +1032,7 @@ header#header {
 
 @media (max-width: 768px){
 .contact-bt a {
+    width: 100%;
     padding: 10px 20px;
     display: block;
 }
